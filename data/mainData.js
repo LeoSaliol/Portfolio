@@ -1,11 +1,11 @@
-import Resume from '../public/resume.pdf';
+import Resume from '../src/resume.pdf';
 
 export const mainData = {
     name: 'Leonel Matias Saliol',
     title: 'Developer Full-Stack ',
     descriptionEn:
-        'I am passionate about the whole front-end process, from planning to the final project, achieving an intuitive product with a pleasant user experience.',
+        'I am fascinated by the entire development cycle as a Full Stack developer, from conceptualization and planning to project implementation and deployment. My goal is to create products that are not only intuitive but also provide a gratifying user experience at every stage of the process.',
     descriptionEs:
-        'Todo el proceso del front-end me apasiona, desde la planificación hasta el proyecto final, logrando un producto intuitivo y con una agradable experiencia de usuario.',
+        'Me fascina todo el ciclo de desarrollo como Full Stack, desde la conceptualización y planificación hasta la implementación y el despliegue del proyecto.       Con el objetivo de crear productos que no solo sean intuitivos, sino que también ofrezcan una experiencia de usuario gratificante en cada fase del proceso',
     resume: Resume,
 };

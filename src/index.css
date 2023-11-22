@@ -11,6 +11,7 @@
 }
 * {
     font-family: 'Basis grotesque';
+    text-wrap: balance;
 }
 .slide-in-blurred-top {
     -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1)
@@ -60,8 +61,8 @@
 }
 
 .color-change-4x {
-    -webkit-animation: color-change-4x 6s linear infinite alternate both;
-    animation: color-change-4x 6s linear infinite alternate both;
+    -webkit-animation: color-change-4x 3s linear infinite alternate both;
+    animation: color-change-4x 3s linear infinite alternate both;
 }
 
 .shadow-drop-br {
@@ -74,13 +75,13 @@
         color: #48d8e2;
     }
     33.3333% {
-        color: #b22cff;
+        color: #c2ff92;
     }
     66.666% {
-        color: #9456e5;
+        color: #c3ff51;
     }
     100% {
-        color: #3dbcee;
+        color: #efff33;
     }
 }
 @keyframes color-change-4x {
@@ -88,13 +89,13 @@
         color: #48d8e2;
     }
     33.3333% {
-        color: #b22cff;
+        color: #c2ff92;
     }
     66.666% {
-        color: #9456e5;
+        color: #c3ff51;
     }
     100% {
-        color: #3dbcee;
+        color: #efff33;
     }
 }
 

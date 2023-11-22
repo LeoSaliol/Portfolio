@@ -1,17 +1,30 @@
 import { useState } from 'react';
 import { MenuIcon } from '../Icons/index';
+import { useContext } from 'react';
+import { ContextLenguage } from '../context/LenguageContext';
 export const Navbar = () => {
     const [modal, setModal] = useState(false);
     const listItem = ['Proyecto', 'Contacto', 'Education', 'Nose'];
+    const { lenguageES, setLenguageES } = useContext(ContextLenguage);
     return (
-        <nav className="bg-[#ffffff11] backdrop-blur-[35px] w-[90%] md:max-w-[460px]  top-4 md:top-5 left-0 right-0 mx-auto px-4 rounded-2xl fixed text-[#ffffffc2] ">
+        <nav className="bg-bgGray backdrop-blur-[35px] w-[90%] md:max-w-[460px]  top-4 md:top-5 left-0 right-0 mx-auto px-4 rounded-2xl fixed text-textSecondary shadow-lg ">
             <div className="flex justify-between gap-2 items-center py-2 font-black">
-                <h2>LG</h2>
+                <h2 className="mr-auto">LG</h2>
+                <button
+                    onClick={() => setLenguageES(!lenguageES)}
+                    className={`  rounded-xl px-3 py-2 tracking-[3px] font-black shadow-lg text-center ${
+                        lenguageES
+                            ? 'bg-bgGray text-textPrimary'
+                            : ' bg-bgGray text-textPrimary'
+                    } `}
+                >
+                    {lenguageES ? 'ES' : 'EN'}
+                </button>
                 <button
                     onClick={() => setModal(!modal)}
-                    className="md:hidden block"
+                    className="md:hidden block pl-2"
                 >
-                    <MenuIcon className="w-[40px]" />
+                    <MenuIcon className="w-[40px] text-textSecondary" />
                 </button>
 
                 <ul className="md:flex hidden   items-center gap-2 md:gap-4 ">
@@ -19,7 +32,7 @@ export const Navbar = () => {
                         <a
                             key={index}
                             href="#"
-                            className="hover:bg-[#000000e3] w-full rounded-md px-2 py-2 "
+                            className="hover:bg-hoverBlack w-full rounded-md  px-2 py-2 hover:text-v2green transition duration-500 ease-in-out scale-100 hover:scale-105 "
                         >
                             {item}
                         </a>
@@ -32,7 +45,7 @@ export const Navbar = () => {
                         <a
                             key={index}
                             href="#"
-                            className="hover:bg-[#000000e3] w-full rounded-2xl py-2 text-center tracking-[1px]"
+                            className="hover:bg-hoverBlack w-full rounded-2xl py-2 text-center tracking-[1px] hover:text-v2green transition duration-500 ease-in-out scale-100 hover:scale-105"
                         >
                             {item}
                         </a>
