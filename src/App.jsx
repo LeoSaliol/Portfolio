@@ -1,54 +1,26 @@
-import { useState } from 'react';
-import { MenuIcon } from './Icons';
+import { mainData } from '../data/mainData';
+import { Navbar } from './components/Navbar';
 
 function App() {
-    const [modal, setModal] = useState(false);
-    const listItem = ['Proyecto', 'Contacto', 'Education', 'Nose'];
     return (
         <div className="px-7">
-            <nav className="bg-[#ffffff11] backdrop-blur-[35px] w-[90%] md:max-w-[460px]  top-4 md:top-5 left-0 right-0 mx-auto px-4 rounded-2xl fixed text-[#ffffffc2] ">
-                <div className="flex justify-between gap-2 items-center py-2 font-black">
-                    <h2>LG</h2>
-                    <button
-                        onClick={() => setModal(!modal)}
-                        className="md:hidden block"
-                    >
-                        <MenuIcon className="w-[40px]" />
-                    </button>
-
-                    <ul className="md:flex hidden   items-center gap-2 md:gap-4 ">
-                        {listItem.map((item, index) => (
-                            <a
-                                key={index}
-                                href="#"
-                                className="hover:bg-[#0c0c0c] w-full rounded-md px-2 py-2 "
-                            >
-                                {item}
-                            </a>
-                        ))}
-                    </ul>
-                </div>
-                {modal && (
-                    <ul className="flex flex-col items-center gap-2 pb-4 slide-in-blurred-top ">
-                        {listItem.map((item, index) => (
-                            <a
-                                key={index}
-                                href="#"
-                                className="hover:bg-[#0c0c0c91] w-full rounded-2xl py-2 text-center tracking-[1px]"
-                            >
-                                {item}
-                            </a>
-                        ))}
-                    </ul>
-                )}
-            </nav>
+            <Navbar />
             <main className="pt-20">
-                <h1
-                    className="text-[40px] tracking-[0.01
-                  rem]  text-center font-black "
-                >
-                    The most advanced Design System for Figma
-                </h1>
+                <section className="mt-6 text-center">
+                    <h1 className="text-5xl font-black tracking-wider ">
+                        {mainData.name}
+                    </h1>
+                    <p className="mt-5 text-2xl tracking-normal font-medium color-change-4x">
+                        {mainData.title}
+                    </p>
+                    <a
+                        href={mainData.resume}
+                        download
+                        className=" inline-block mt-5 px-5 py-3 bg-[#ffffff11] text-white rounded-full text-lg font-medium hover:bg-zinc-600 uppercase transition duration-300 ease-in-out scale-100 hover:scale-105"
+                    >
+                        Download CV
+                    </a>
+                </section>
             </main>
         </div>
     );
