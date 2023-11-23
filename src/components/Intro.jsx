@@ -4,7 +4,20 @@ import { ContextLenguage } from '../context/LenguageContext';
 
 export const Intro = () => {
     const { lenguageES } = useContext(ContextLenguage);
+    const partes = mainData.descriptionEn.split(' ');
 
+    const contenidosConEstilos = partes.map((parte, index) => {
+        return (
+            <span
+                key={index}
+                className={`${
+                    parte === 'Full' || parte === 'Stack' ? 'text-v2yellow' : ''
+                } `}
+            >
+                {parte}{' '}
+            </span>
+        );
+    });
     return (
         <>
             <section className="mt-6 text-center">
@@ -17,9 +30,7 @@ export const Intro = () => {
             </section>
             <section className="text-center">
                 <p className=" mt-7 text-justify text-textGray px-1">
-                    {lenguageES
-                        ? mainData.descriptionEs
-                        : mainData.descriptionEn}
+                    {lenguageES ? contenidosConEstilos : mainData.descriptionEn}
                 </p>
                 <a
                     href={mainData.resume}
