@@ -1,45 +1,37 @@
-import { useContext } from 'react';
-import { mainData } from '../../data/mainData';
-import { ContextLenguage } from '../context/LenguageContext';
+import { useContext } from "react";
+import { mainData } from "../../data/mainData";
+import { ContextLenguage } from "../context/LenguageContext";
+import { description } from "../utils/descriptions";
 
 export const Intro = () => {
-    const { lenguageES } = useContext(ContextLenguage);
-    const partes = mainData.descriptionEn.split(' ');
+  const { lenguageES } = useContext(ContextLenguage);
 
-    const contenidosConEstilos = partes.map((parte, index) => {
-        return (
-            <span
-                key={index}
-                className={`${
-                    parte === 'Full' || parte === 'Stack' ? 'text-v2yellow' : ''
-                } `}
-            >
-                {parte}{' '}
-            </span>
-        );
-    });
-    return (
-        <>
-            <section className="mt-6 text-center">
-                <h1 className="text-5xl font-black tracking-wider ">
-                    {mainData.name}
-                </h1>
-                <p className="mt-5 text-2xl tracking-wide font-medium color-change-4x">
-                    {mainData.title}
-                </p>
-            </section>
-            <section className="text-center">
-                <p className=" mt-7 text-justify text-textGray px-1">
-                    {lenguageES ? contenidosConEstilos : mainData.descriptionEn}
-                </p>
-                <a
-                    href={mainData.resume}
-                    download
-                    className=" inline-block  text-center mt-8 px-5 py-3 bg-bgGray  hover:border-[1px] border-v2green  rounded-full text-lg font-medium  uppercase transition-all ease-linear duration-600 hover:scale-105 hover:text-v2green hover:bg-[#000000f1] hover:font-bold tracking-[3px] "
-                >
-                    Download CV
-                </a>
-            </section>
-        </>
-    );
+  return (
+    <>
+      <section className="mt-6 flex flex-col items-center text-center tracking-wide lg:mt-6 lg:gap-2">
+        <p className="mb-2 text-2xl lg:mb-0 lg:text-3xl">
+          {lenguageES ? "Hola 👋 soy" : "Hello 👋 I am"}{" "}
+        </p>
+        <h1 className="text-5xl font-black tracking-wider lg:mt-2 lg:text-7xl ">
+          {mainData.name}
+        </h1>
+        <p className="color-change-4x mt-4 text-2xl font-medium tracking-wide lg:text-3xl">
+          {lenguageES ? mainData.titleEs : mainData.titleEn}
+        </p>
+
+        <p className=" mt-7 px-1 text-justify text-textGray lg:text-lg">
+          {lenguageES
+            ? description(mainData.descriptionEs.split(" "))
+            : description(mainData.descriptionEn.split(" "))}
+        </p>
+        <a
+          href={mainData.resume}
+          download
+          className=" duration-600 mb-9  mt-8 h-[51px]  rounded-full border-v2green bg-bgGray  px-5 py-3  text-center text-lg font-medium  uppercase tracking-[3px] transition-colors ease-linear hover:scale-105 hover:border-[1px] hover:bg-[#000000f1] hover:font-bold hover:text-v2green "
+        >
+          {lenguageES ? "Descargar CV" : "Download CV"}
+        </a>
+      </section>
+    </>
+  );
 };
