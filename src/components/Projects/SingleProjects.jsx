@@ -31,8 +31,8 @@ export const SingleProjects = ({ p }) => {
                 className="  h-7 w-6"
               />
               <span
-                className="tooltip absolute right-[-1.5rem] top-[-2.5rem]  rounded-lg border-t-[50%]  bg-gray-600 px-2 
-    py-2 text-sm text-gray-100 opacity-0 transition-opacity group-hover:opacity-100"
+                className="tooltip absolute top-[-2.5rem] z-50 flex rounded-lg border-t-[50%] bg-gray-600  px-2 py-2 
+    text-sm text-gray-100 opacity-0 transition-opacity group-hover:opacity-100 sm:right-[-1.5rem]"
               >
                 {skill.name}
               </span>

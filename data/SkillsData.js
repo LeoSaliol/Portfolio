@@ -13,6 +13,9 @@ import Vite from "../src/assets/Skills imgs/vitejs.svg";
 import Sass from "../src/assets/Skills imgs/sass.png";
 import NodeImg from "../src/assets/Skills imgs/node-js.png";
 import Express from "../src/assets/Skills imgs/express.png";
+import Postgre from "../src/assets/Skills imgs/Postgresql.png";
+import Postman from "../src/assets/Skills imgs/postman.png";
+import Astro from "../src/assets/Skills imgs/astro.png";
 export const reactJs = {
   name: "ReactJS",
   img: React,
@@ -44,7 +47,7 @@ export const html = {
 };
 
 export const mongoDB = {
-  name: "Java",
+  name: "Mongo DB",
   img: MongoDB,
 };
 
@@ -84,11 +87,18 @@ export const express = {
   name: "ExpressJS",
   img: Express,
 };
-// export const PostgreSQL = {
-//   name: "PostgreSQL",
-//   img: Postgre,
-// }
-
+export const postgreSQL = {
+  name: "PostgreSQL",
+  img: Postgre,
+};
+export const postman = {
+  name: "Postman",
+  img: Postman,
+};
+export const astro = {
+  name: "Astro",
+  img: Astro,
+};
 export const skFrontend = [
   html,
   css,
@@ -96,9 +106,19 @@ export const skFrontend = [
   sass,
   tailwind,
   js,
+  typeScript,
   reactJs,
   nextJS,
-  typeScript,
 ];
 
-export const skBackend = [mongoDB, node, js, typeScript, express];
+export const skBackend = [
+  js,
+  typeScript,
+  node,
+  express,
+  mongoDB,
+  mySql,
+  postgreSQL,
+];
+
+export const others = [vite, git, postman, astro];
