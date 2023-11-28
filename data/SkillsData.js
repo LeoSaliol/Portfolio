@@ -7,11 +7,12 @@ import MongoDB from "../src/assets/Skills imgs/mongoDB.svg";
 import JavaScript from "../src/assets/Skills imgs/javascript.svg";
 import MySql from "../src/assets/Skills imgs/mysql.svg";
 import Tailwind from "../src/assets/Skills imgs/tailwind.svg";
-import NextJS from "../src/assets/Skills imgs/nextjs.png";
+import NextJS from "../src/assets/Skills imgs/nextJS.svg";
 import TypeScript from "../src/assets/Skills imgs/typescript.svg";
 import Vite from "../src/assets/Skills imgs/vitejs.svg";
 import Sass from "../src/assets/Skills imgs/sass.png";
-
+import NodeImg from "../src/assets/Skills imgs/node-js.png";
+import Express from "../src/assets/Skills imgs/express.png";
 export const reactJs = {
   name: "ReactJS",
   img: React,
@@ -74,17 +75,30 @@ export const vite = {
   img: Vite,
 };
 
-// export const skills = [
-//   html,
-//   css,
-//   bootstrap,
-//   tailwind,
-//   js,
-//   reactJs,
-//   nextJS,
-//   typeScript,
-//   git,
-//   mongoDB,
-//   mySql,
-//   vite,
-// ];
+export const node = {
+  name: "NodeJS",
+  img: NodeImg,
+};
+
+export const express = {
+  name: "ExpressJS",
+  img: Express,
+};
+// export const PostgreSQL = {
+//   name: "PostgreSQL",
+//   img: Postgre,
+// }
+
+export const skFrontend = [
+  html,
+  css,
+  bootstrap,
+  sass,
+  tailwind,
+  js,
+  reactJs,
+  nextJS,
+  typeScript,
+];
+
+export const skBackend = [mongoDB, node, js, typeScript, express];

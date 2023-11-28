@@ -7,12 +7,12 @@ export const SingleProjects = ({ p }) => {
   const { lenguageES } = useContext(ContextLenguage);
 
   return (
-    <div className=" mt-6 w-full  pb-12 md:grid md:grid-cols-2 md:gap-9 ">
-      <figure className=" mb-5 h-[17rem] overflow-hidden rounded-[1rem] bg-bgGray object-contain sm:h-[22rem] md:h-full ">
+    <div className=" mt-6 w-full overflow-hidden  rounded-[1rem]  md:grid md:grid-cols-2 md:gap-9">
+      <figure className=" mb-5 h-[17rem] overflow-hidden  rounded-[1rem]  bg-bgGray object-contain sm:h-[22rem]  md:h-full ">
         <img
           src={p.img}
           alt={p.title}
-          className=" h-full w-full translate-x-[1.5rem] translate-y-[1.5rem] rounded-[1rem] transition-all duration-500 ease-out hover:translate-x-[1rem] hover:translate-y-[1rem] md:object-cover md:hover:translate-x-[0.8rem] md:hover:translate-y-[0.8rem] "
+          className=" h-full w-full translate-x-[1.5rem] translate-y-[1.5rem] rounded-s-[1rem] transition-all duration-500 ease-out hover:translate-x-[1rem] hover:translate-y-[1rem] md:object-cover md:hover:translate-x-[0.8rem] md:hover:translate-y-[0.8rem] "
         />
       </figure>
       <article className="  md:flex md:flex-col md:gap-1 md:py-8">
@@ -31,7 +31,7 @@ export const SingleProjects = ({ p }) => {
                 className="  h-7 w-6"
               />
               <span
-                className="tooltip absolute right-[-1rem] top-[-2.5rem]  rounded-lg border-t-[50%]  bg-gray-600 px-2 
+                className="tooltip absolute right-[-1.5rem] top-[-2.5rem]  rounded-lg border-t-[50%]  bg-gray-600 px-2 
     py-2 text-sm text-gray-100 opacity-0 transition-opacity group-hover:opacity-100"
               >
                 {skill.name}
@@ -40,10 +40,10 @@ export const SingleProjects = ({ p }) => {
           ))}
         </div>
 
-        <div className=" space-x-5 ">
+        <div className=" space-x-5 pb-5 ">
           <a href={p.urlProyect} target="_blank" rel="noreferrer">
             <button className="h-11  w-32 rounded-lg bg-textPrimary text-center text-xl font-extrabold  text-bgBlack">
-              {lenguageES ? "Ver proyecto" : "Live"}
+              {lenguageES ? "Ver" : "Live"}
             </button>
           </a>
           <a href={p.urlRepo} target="_blank" rel="noreferrer">

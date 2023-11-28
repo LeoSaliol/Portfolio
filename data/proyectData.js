@@ -46,7 +46,7 @@ const proyect2 = {
     "Aplicación TODO con modo oscuro/claro. Puedes agregar, eliminar, filtrar y reorganizar tareas.",
 };
 
-const proyect3 = {
+const proyect6 = {
   title: "Search Pokemon",
   img: ImgPokeApi,
   urlProyect: "https://listadopokemon.netlify.app/",
@@ -88,7 +88,7 @@ const proyect5 = {
   descriptionEs: "Página de comercio electrónico",
 };
 
-const proyect6 = {
+const proyect3 = {
   title: "Job Listings",
   img: JobListing,
   urlProyect: "https://jobslist-saliol.vercel.app/",

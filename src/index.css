@@ -73,6 +73,35 @@
 }
 @-webkit-keyframes color-change-4x {
   0% {
+    color: #38a3a5;
+  }
+  33.3333% {
+    color: #57cc99;
+  }
+  66.666% {
+    color: #80ed99;
+  }
+  100% {
+    color: #c2ff92;
+  }
+}
+@keyframes color-change-4x {
+  0% {
+    color: #38a3a5;
+  }
+  33.3333% {
+    color: #57cc99;
+  }
+  66.666% {
+    color: #80ed99;
+  }
+  100% {
+    color: #c2ff92;
+  }
+}
+
+/* @-webkit-keyframes color-change-4x {
+  0% {
     color: #48d8e2;
   }
   33.3333% {
@@ -98,7 +127,7 @@
   100% {
     color: #efff33;
   }
-}
+} */
 
 @-webkit-keyframes shadow-drop-br {
   0% {

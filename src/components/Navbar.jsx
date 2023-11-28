@@ -2,6 +2,8 @@ import { useState } from "react";
 import { MenuIcon } from "../Icons/index";
 import { useContext } from "react";
 import { ContextLenguage } from "../context/LenguageContext";
+import ImgEs from "../assets/español.png";
+import ImgEn from "../assets/english-flag.png";
 export const Navbar = () => {
   const [modal, setModal] = useState(false);
   const listItem = ["Proyecto", "Contacto", "Education", "Nose"];
@@ -12,16 +14,16 @@ export const Navbar = () => {
         modal ? "backdrop-blur-[50px]" : "backdrop-blur-[5px]"
       } `}
     >
-      <div className="flex items-center justify-between gap-2 py-2 font-black md:flex-row-reverse">
+      <div className="flex  items-center justify-between gap-2 py-2 font-black md:flex-row-reverse">
         <button
           onClick={() => setLenguageES(!lenguageES)}
-          className={`    rounded-xl px-3 py-2 text-center font-black tracking-[3px] shadow-lg   ${
-            lenguageES
-              ? " bg-bgGray text-textPrimary shadow-xl "
-              : " bg-bgGray text-textPrimary shadow-sm "
-          } `}
+          className="opacity-60"
         >
-          {lenguageES ? "ES" : "EN"}
+          {lenguageES ? (
+            <img src={ImgEs} alt="" className="h6 w-6 " />
+          ) : (
+            <img src={ImgEn} alt="" className="h6 w-6" />
+          )}
         </button>
         <button
           onClick={() => setModal(!modal)}
@@ -30,7 +32,7 @@ export const Navbar = () => {
           <MenuIcon className="w-[40px] text-textSecondary" />
         </button>
 
-        <ul className="hidden items-center   gap-2 md:flex md:gap-4 ">
+        <ul className=" hidden items-center  gap-2 md:flex md:gap-4 ">
           {listItem.map((item, index) => (
             <a
               key={index}
@@ -43,7 +45,7 @@ export const Navbar = () => {
         </ul>
       </div>
       {modal && (
-        <ul className="slide-in-blurred-top flex flex-col items-center gap-2 pb-4 ">
+        <ul className=" scale-in-ver-top flex flex-col items-center gap-2 pb-4 ">
           {listItem.map((item, index) => (
             <a
               key={index}
