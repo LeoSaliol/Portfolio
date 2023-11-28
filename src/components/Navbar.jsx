@@ -8,7 +8,7 @@ export const Navbar = () => {
   const { lenguageES, setLenguageES } = useContext(ContextLenguage);
   return (
     <nav
-      className={`fixed left-0 right-0 top-4 mx-auto w-[85%] rounded-2xl bg-bgGray px-4 text-textSecondary   md:top-5 md:max-w-[480px] ${
+      className={`fixed left-0 right-0 top-4 z-40 mx-auto w-[85%] rounded-2xl bg-bgGray px-4   text-textSecondary md:top-5 md:max-w-[480px] ${
         modal ? "backdrop-blur-[50px]" : "backdrop-blur-[5px]"
       } `}
     >
