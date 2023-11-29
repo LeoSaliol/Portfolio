@@ -12,9 +12,11 @@ function App() {
 
       <main className="z-0 pt-20 md:container md:mx-auto md:max-w-[720px] md:pt-28 lg:max-w-[850px] lg:pt-32 xl:max-w-[1050px]">
         <Intro />
-        <Divisor my={20} />
+        <Divisor />
         <MainProject className="w-8 stroke-textGray pt-[4px]" />
+        <Divisor />
         <MainSkills />
+        <Divisor />
       </main>
     </div>
   );

@@ -1,0 +1,50 @@
+.css-button-rounded--rose {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  background: #ffffff11;
+  border: 1px solid #ffffff11;
+}
+.css-button-rounded--rose:hover {
+  background: #000000f1;
+  color: #c3ff51;
+  border: 1px solid #c3ff51;
+}
+
+/*-- Button top to bottom */
+.css-button-sliding-to-bottom--rose {
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  z-index: 0;
+  background: #ffffff11;
+  overflow: hidden;
+  color: #c2ff92;
+}
+.css-button-sliding-to-bottom--rose:hover {
+  color: #000814;
+  font-weight: bold;
+}
+.css-button-sliding-to-bottom--rose:hover:after {
+  height: 100%;
+}
+.css-button-sliding-to-bottom--rose:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: #c2ff92;
+}

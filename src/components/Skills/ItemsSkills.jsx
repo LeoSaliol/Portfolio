@@ -12,7 +12,9 @@ export const ItemsSkills = ({ skill }) => {
             alt={sk.name + "logo"}
             className={` h-4 w-4 sm:h-5 sm:w-5 `}
           />
-          <p className="text-sm sm:text-base">{sk.name}</p>
+          <p className="text-sm font-medium text-textSecondary sm:text-base lg:tracking-wider">
+            {sk.name}
+          </p>
         </div>
       ))}
     </div>

@@ -7,8 +7,11 @@ export const SingleProjects = ({ p }) => {
   const { lenguageES } = useContext(ContextLenguage);
 
   return (
-    <div className=" mt-6 w-full overflow-hidden  rounded-[1rem]  md:grid md:grid-cols-2 md:gap-9">
-      <figure className=" mb-5 h-[17rem] overflow-hidden  rounded-[1rem]  bg-bgGray object-contain sm:h-[22rem]  md:h-full ">
+    <div className=" mt-6 w-full overflow-hidden  rounded-[1rem]  md:grid md:grid-cols-2 md:gap-9 lg:w-3/4 xl:w-3/4 xl:gap-5">
+      <figure
+        className=" mb-5 h-[18rem] overflow-hidden rounded-[1rem] bg-bgGray object-contain sm:h-[19rem] 
+      sm:w-3/4 md:h-full  md:w-full xl:h-[17rem] xl:w-[23rem] "
+      >
         <img
           src={p.img}
           alt={p.title}
@@ -16,9 +19,7 @@ export const SingleProjects = ({ p }) => {
         />
       </figure>
       <article className="  md:flex md:flex-col md:gap-1 md:py-8">
-        <h3 className="mb-4 text-3xl font-bold md:mb-2 md:text-4xl">
-          {p.title}
-        </h3>
+        <h3 className="mb-4 text-3xl font-bold md:mb-2 ">{p.title}</h3>
         <p className="font-semibold tracking-wide text-textGray ">
           {p.descriptionEs}
         </p>
@@ -40,30 +41,19 @@ export const SingleProjects = ({ p }) => {
           ))}
         </div>
 
-        <div className=" space-x-5 pb-5 ">
+        <div className=" space-x-5 pb-5  ">
           <a href={p.urlProyect} target="_blank" rel="noreferrer">
-            <button className="h-11  w-32 rounded-lg bg-textPrimary text-center text-xl font-extrabold  text-bgBlack">
+            <button className="css-button-sliding-to-left--green h-11 w-32 font-semibold tracking-wider">
               {lenguageES ? "Ver" : "Live"}
             </button>
           </a>
           <a href={p.urlRepo} target="_blank" rel="noreferrer">
-            <button className="h-11 w-36 rounded-lg bg-bgGray text-xl font-bold text-textPrimary">
+            <button className="css-button-sliding-to-left--blue h-11 w-36 text-lg font-semibold tracking-wider">
               {lenguageES ? "Repositorio" : "Repository"}
             </button>
           </a>
         </div>
       </article>
-
-      {/* <div className="group relative flex">
-        <span className="bg-red-400 px-2 py-1 text-white">Button</span>
-
-        <span
-          className="absolute left-1/2 m-4 mx-auto -translate-x-1/2 translate-y-full rounded-md bg-gray-800 px-1 
-    text-sm text-gray-100 opacity-0 transition-opacity group-hover:opacity-100"
-        >
-          Tooltip
-        </span>
-      </div> */}
     </div>
   );
 };

@@ -4,7 +4,7 @@ export function description(partes) {
       <span
         key={index}
         className={`${
-          parte === "Full" || parte === "Stack" ? "text-v2green" : ""
+          parte === "Full" || parte === "Stack" ? "text-[#57cc99]" : ""
         } `}
       >
         {parte}{" "}

@@ -1,3 +1,4 @@
+import "./buton.css";
 import { useContext } from "react";
 import { mainData } from "../../data/mainData";
 import { ContextLenguage } from "../context/LenguageContext";
@@ -27,10 +28,17 @@ export const Intro = () => {
         <a
           href={mainData.resume}
           download
-          className=" duration-600 mb-9  mt-8 h-[51px]  rounded-full border-v2green bg-bgGray  px-5 py-3  text-center text-lg font-medium  uppercase tracking-[3px] transition-colors ease-linear hover:scale-105 hover:border-[1px] hover:bg-[#000000f1] hover:font-bold hover:text-v2green "
+          className="css-button-rounded--rose duration-600  mb-12 mt-11 h-[51px]  rounded-full px-5 py-3  text-center text-lg font-medium uppercase tracking-[3px] hover:scale-105"
         >
           {lenguageES ? "Descargar CV" : "Download CV"}
         </a>
+        {/* <a
+          href={mainData.resume}
+          download
+          className=" duration-600 mb-9  mt-8 h-[51px]  rounded-full border-v2green bg-bgGray  px-5 py-3  text-center text-lg font-medium  uppercase tracking-[3px] transition-colors ease-linear hover:scale-105 hover:border-[1px] hover:bg-[#000000f1] hover:font-bold hover:text-v2green "
+        >
+          {lenguageES ? "Descargar CV" : "Download CV"}
+        </a> */}
       </section>
     </>
   );

@@ -6,7 +6,7 @@ import ImgEs from "../assets/español.png";
 import ImgEn from "../assets/english-flag.png";
 export const Navbar = () => {
   const [modal, setModal] = useState(false);
-  const listItem = ["Proyecto", "Contacto", "Education", "Nose"];
+  const listItem = ["Proyecto", "Skills", "Education", "Nose"];
   const { lenguageES, setLenguageES } = useContext(ContextLenguage);
   return (
     <nav
