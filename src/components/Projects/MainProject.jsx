@@ -10,7 +10,7 @@ export const MainProject = () => {
   const { lenguageES } = useContext(ContextLenguage);
   const [quantity, setQuantity] = useState(3);
   return (
-    <section className="mb-12 mt-24 flex flex-col gap-9">
+    <section className="mb-12 mt-24 flex flex-col gap-9" id="Proyecto">
       <h2 className="   flex gap-3 text-2xl font-semibold tracking-wider md:text-3xl lg:text-4xl">
         {lenguageES ? "Proyectos" : "Projects"}{" "}
         <ProjectIcon className=" w-8 stroke-textGray pt-[4px] lg:w-10" />

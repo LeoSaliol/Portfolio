@@ -43,12 +43,15 @@ export const SingleProjects = ({ p }) => {
 
         <div className=" space-x-5 pb-5  ">
           <a href={p.urlProyect} target="_blank" rel="noreferrer">
-            <button className="css-button-sliding-to-left--green h-11 w-32 font-semibold tracking-wider">
+            <button className="css-button-sliding-to-left--green h-9 w-28 font-semibold tracking-wider md:h-11 md:w-32 md:text-lg">
               {lenguageES ? "Ver" : "Live"}
             </button>
           </a>
           <a href={p.urlRepo} target="_blank" rel="noreferrer">
-            <button className="css-button-sliding-to-left--blue h-11 w-36 text-lg font-semibold tracking-wider">
+            <button
+              className="css-button-sliding-to-left--blue h-9 w-28 text-base
+font-semibold tracking-wider md:h-11 md:w-32 md:text-lg"
+            >
               {lenguageES ? "Repositorio" : "Repository"}
             </button>
           </a>

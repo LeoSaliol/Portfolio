@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { ContextLenguage } from "../context/LenguageContext";
 import ImgEs from "../assets/español.png";
 import ImgEn from "../assets/english-flag.png";
+import { Link } from "react-scroll";
 export const Navbar = () => {
   const [modal, setModal] = useState(false);
   const listItem = ["Proyecto", "Skills", "Education", "Nose"];
@@ -34,18 +35,23 @@ export const Navbar = () => {
 
         <ul className=" hidden items-center  gap-2 md:flex md:gap-4 ">
           {listItem.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href="#"
-              className="w-full scale-100 rounded-md  px-2 py-2 transition duration-500 ease-in-out hover:scale-105 hover:bg-hoverBlack hover:text-v2green "
+              to={item}
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={80}
+              duration={800}
+              className="w-full scale-100 cursor-pointer  rounded-md px-2 py-2 transition duration-500 ease-in-out hover:scale-105 hover:bg-hoverBlack hover:text-v2green"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </ul>
       </div>
       {modal && (
-        <ul className=" scale-in-ver-top flex flex-col items-center gap-2 pb-4 ">
+        <ul className=" scale-in-ver-top flex flex-col items-center gap-2 pb-4 md:hidden ">
           {listItem.map((item, index) => (
             <a
               key={index}
