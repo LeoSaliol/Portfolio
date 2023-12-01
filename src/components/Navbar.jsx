@@ -7,7 +7,7 @@ import ImgEn from "../assets/english-flag.png";
 import { Link } from "react-scroll";
 export const Navbar = () => {
   const [modal, setModal] = useState(false);
-  const listItem = ["Proyecto", "Skills", "Education", "Nose"];
+  const listItem = ["Proyecto", "Skills", "Education", "Contacto"];
   const { lenguageES, setLenguageES } = useContext(ContextLenguage);
   return (
     <nav
