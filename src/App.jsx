@@ -1,5 +1,6 @@
 import { MainContact } from "./components/Contact/MainContact";
-import { MainEducation } from "./components/Edutacion/MainEducation";
+import { MainEducation } from "./components/Education/MainEducation";
+
 import { Intro } from "./components/Intro";
 import { Navbar } from "./components/Navbar";
 import { MainProject } from "./components/Projects/MainProject";

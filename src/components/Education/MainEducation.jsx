@@ -13,7 +13,7 @@ export const MainEducation = () => {
         <EducationIcon className="w-8 stroke-textGray pt-1" />
       </h2>
       <section className=" my-20 ">
-        <div className="container mx-auto px-5">
+        <div className="container mx-auto sm:px-5">
           {educations.map((edu, i) => (
             <ItemEducation key={i} edu={edu} />
           ))}
