@@ -5,7 +5,6 @@ import { Intro } from "./components/Intro";
 import { Navbar } from "./components/Navbar";
 import { MainProject } from "./components/Projects/MainProject";
 import { MainSkills } from "./components/Skills/MainSkills";
-
 import { Divisor } from "./utils/divisor";
 
 function App() {
