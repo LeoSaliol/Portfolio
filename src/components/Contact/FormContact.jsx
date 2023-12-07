@@ -39,8 +39,8 @@ export const FormContact = () => {
   return (
     <section className="body-font relative rounded-xl   text-gray-400">
       <div className="container mx-auto py-2 ">
-        <div className="mx-auto md:w-full lg:w-1/2">
-          <div className=" flex flex-wrap md:justify-center">
+        <div className="mx-auto md:w-full  lg:w-3/4">
+          <div className=" flex flex-wrap md:justify-center ">
             <form
               ref={form}
               className=" w-full sm:w-3/4"
@@ -58,10 +58,10 @@ export const FormContact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    className={`focus:border-v2violet w-full rounded border-[#925ff073] bg-bgGray bg-opacity-40 px-3 py-1 text-base leading-8 text-textPrimary outline-none transition-colors duration-500 ease-in-out focus:bg-bgBlack focus:ring-1  ${
+                    className={`w-full rounded border-[#925ff073] bg-bgGray bg-opacity-40 px-3 py-1 text-base leading-8 text-textPrimary outline-none transition-colors duration-500 ease-in-out  focus:bg-bgBlack focus:ring-1  ${
                       errors.name && errors.name.message
                         ? "border-red-500 focus:border-red-500 focus:ring-red-500"
-                        : "focus:ring-v2violet"
+                        : "focus:border-v2violet focus:ring-v2violet"
                     }`}
                     {...register("name", {
                       required: `${
@@ -95,10 +95,10 @@ export const FormContact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className={`focus:border-v2violet  w-full rounded border-[#925ff073] bg-bgGray bg-opacity-40 px-3 py-1 text-base leading-8 text-textPrimary outline-none transition-colors duration-500 ease-in-out focus:bg-bgBlack focus:ring-1 ${
+                    className={`w-full  rounded border-[#925ff073] bg-bgGray bg-opacity-40 px-3 py-1 text-base leading-8 text-textPrimary outline-none transition-colors duration-500 ease-in-out  focus:bg-bgBlack focus:ring-1 ${
                       errors.email && errors.email.message
                         ? "border-red-500 focus:border-red-500 focus:ring-red-500"
-                        : "focus:ring-v2violet"
+                        : "focus:border-v2violet focus:ring-v2violet"
                     }`}
                     {...register("email", {
                       minLength: {
@@ -137,10 +137,10 @@ export const FormContact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    className={`focus:border-v2violet h-32 w-full resize-none rounded border border-[#925ff073] bg-bgGray bg-opacity-40 px-3 py-1 text-base leading-6 text-textPrimary outline-none transition-colors duration-200 ease-in-out focus:bg-bgBlack focus:ring-1  ${
+                    className={`h-32 w-full resize-none rounded border border-[#925ff073] bg-bgGray bg-opacity-40 px-3 py-1 text-base leading-6 text-textPrimary outline-none transition-colors duration-200 ease-in-out  focus:bg-bgBlack focus:ring-1  ${
                       errors.message && errors.message.message
                         ? "border-red-500 focus:border-red-500 focus:ring-red-500"
-                        : "focus:ring-v2violet"
+                        : "focus:border-v2violet focus:ring-v2violet"
                     }`}
                     {...register("message", {
                       minLength: {
