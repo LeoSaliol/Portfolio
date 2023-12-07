@@ -10,6 +10,7 @@ export default {
         textPrimary: "#f1f1f3",
         textSecondary: "#ffffffc2",
         textGray: "#ffffff7a",
+        v2violet: "#925ff0",
         v2green: "#c3ff51",
         v2yellow: "#efff33",
         v2accentLime: "#c2ff92",

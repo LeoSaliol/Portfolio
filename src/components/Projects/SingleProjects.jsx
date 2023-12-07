@@ -21,7 +21,7 @@ export const SingleProjects = ({ p }) => {
       <article className="  md:flex md:flex-col md:gap-1 md:py-8">
         <h3 className="mb-4 text-3xl font-bold md:mb-2 ">{p.title}</h3>
         <p className="font-semibold tracking-wide text-textGray ">
-          {p.descriptionEs}
+          {lenguageES ? p.descriptionEs : p.descriptionEn}
         </p>
         <div className="my-6 flex gap-4 md:mb-4 md:mt-2 ">
           {p.skills.map((skill, i) => (

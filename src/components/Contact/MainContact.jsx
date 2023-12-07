@@ -15,7 +15,6 @@ export const MainContact = () => {
           id="Education"
         >
           {lenguageES ? "Contacto" : "Contact Me"}{" "}
-          {/* <ContactIcon className="w-8 stroke-textGray pt-2" /> */}
           <ContactIcon className="w-8 stroke-textGray pt-1 sm:pt-2" />
         </h2>
         <p className="mb-4 text-left text-base leading-relaxed text-textSecondary md:mb-0 md:w-full lg:w-2/3">

@@ -9,6 +9,7 @@
   src: url(../font/BasisGrotesqueArabicPro-Bold.ttf);
   src: url(../font/BasisGrotesqueArabicPro-Light.ttf);
 }
+
 * {
   font-family: "Basis grotesque";
   text-wrap: pretty;
@@ -73,7 +74,7 @@
 }
 @-webkit-keyframes color-change-4x {
   0% {
-    color: #38a3a5;
+    color: #925ff0;
   }
   33.3333% {
     color: #57cc99;
@@ -87,7 +88,7 @@
 }
 @keyframes color-change-4x {
   0% {
-    color: #38a3a5;
+    color: #925ff0;
   }
   33.3333% {
     color: #57cc99;
@@ -99,35 +100,6 @@
     color: #c2ff92;
   }
 }
-
-/* @-webkit-keyframes color-change-4x {
-  0% {
-    color: #48d8e2;
-  }
-  33.3333% {
-    color: #c2ff92;
-  }
-  66.666% {
-    color: #c3ff51;
-  }
-  100% {
-    color: #efff33;
-  }
-}
-@keyframes color-change-4x {
-  0% {
-    color: #48d8e2;
-  }
-  33.3333% {
-    color: #c2ff92;
-  }
-  66.666% {
-    color: #c3ff51;
-  }
-  100% {
-    color: #efff33;
-  }
-} */
 
 @-webkit-keyframes shadow-drop-br {
   0% {

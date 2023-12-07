@@ -9,10 +9,10 @@ import { Divisor } from "./utils/divisor";
 
 function App() {
   return (
-    <div className="px-12 md:px-0">
+    <div className="reveal px-12 md:px-0">
       <Navbar />
 
-      <main className="z-0 pt-20 md:container md:mx-auto md:max-w-[600px] md:pt-28 lg:max-w-[850px] lg:pt-32 xl:max-w-[1050px]">
+      <main className=" z-0 pt-20   md:container md:mx-auto md:max-w-[600px] md:pt-28 lg:max-w-[850px] lg:pt-32 xl:max-w-[1050px]">
         <Intro />
         <Divisor />
         <MainProject />

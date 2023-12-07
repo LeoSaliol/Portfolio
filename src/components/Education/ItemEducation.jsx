@@ -7,13 +7,13 @@ export const ItemEducation = ({ edu }) => {
   const { lenguageES } = useContext(ContextLenguage);
 
   return (
-    <article className="divide-y-2 divide-gray-800 sm:-my-4 sm:space-y-3">
-      <div className="shadow-drop-br mb-12 flex flex-wrap rounded-xl bg-bgGray px-7 py-6 sm:px-9 sm:py-8 md:flex-nowrap ">
-        <div className="mb-2 flex flex-shrink-0 flex-col sm:mb-6 md:mb-0 md:w-40">
+    <section className="divide-y-2 divide-gray-800 sm:-my-4 sm:space-y-3">
+      <div className="shadow-drop-br mb-12 flex flex-wrap rounded-xl bg-bgGray px-7 py-6 sm:px-9 sm:py-8 md:flex-nowrap  ">
+        <div className="mb-2 flex flex-shrink-0 flex-col sm:mb-6 sm:h-8 md:mb-0 md:w-40">
           <span className="title-font font-semibold text-white">
             {edu.level}
           </span>
-          <span className="mb-2 flex items-center gap-1 text-sm text-gray-500 sm:mt-1">
+          <span className=" flex items-center gap-1 text-sm text-gray-500 ">
             {" "}
             <CalenderIcon className="w-4" />
             {edu.title === "Universidad Nacional de La Plata"
@@ -30,6 +30,6 @@ export const ItemEducation = ({ edu }) => {
           </p>
         </div>
       </div>
-    </article>
+    </section>
   );
 };
